@@ -1,0 +1,2 @@
+1.what if I remove line (head = curr) in base condition, what happens to the output? Why does it happen? trace it with 3 sized linked list and deduce why that line is necessary?
+2. Why do we need to send curr in the reverse ll when head is already global? Can we do it without sending curr as an argument? If yes, then how? If no, then why not? Code and solve!!
