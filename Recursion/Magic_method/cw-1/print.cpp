@@ -12,6 +12,7 @@ void print_1_to_n(int n){
 }
 
 void print_n_to_1(int n){
+    cout << endl;
     // add your code here
     if(n==0) return;
     cout << n << " ";

@@ -35,7 +35,15 @@ void print_ll(){
 //----------don't modify before this point----------------
 void reverse_ll(Node* curr){
     //add your code here
-
+    if(curr->next==nullptr){
+        head = curr;
+        return;
+    }
+    Node* first = curr;
+    reverse_ll(curr->next);
+    Node* second = first->next;
+    second->next = first;
+    first->next = nullptr;
 }
 //----------don't modify beyond this point----------------
 
