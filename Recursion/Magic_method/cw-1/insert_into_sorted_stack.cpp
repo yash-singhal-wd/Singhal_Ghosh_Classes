@@ -7,6 +7,20 @@ using namespace std;
 void insert_into_sorted_stack(stack<int> &st, int x){
     //enter your code here
     
+    //4. Base Condition: returning is mandatory
+    if(st.empty() || (!st.empty() && x>=st.top())){
+        st.push(x);
+        return;
+    }
+
+    //1. reducing input - processing code
+    int t = st.top(); st.pop();
+    
+    //2. magic happens, what you want has been achieved - recursion call
+    insert_into_sorted_stack(st,x);
+
+    //3. completing what we removed
+    st.push(t); 
 }
 
 void print_stack(stack<int> &st){
